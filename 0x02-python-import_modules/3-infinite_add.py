@@ -5,4 +5,4 @@ if __name__ == "__main__":
     tot = 0
     for i in range(1, argc):
         tot += int(argv[i])
-    print(tot
+    print(tot)
