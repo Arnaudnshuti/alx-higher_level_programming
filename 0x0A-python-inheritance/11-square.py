@@ -1,20 +1,14 @@
 #!/usr/bin/python3
-"""
-This program create a Square from a Rectangle
-"""
-
-
+"""this module defines a Rectangle subclass Square"""
 Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """Class Squared based from Rectangle"""
-    def __init__(self, size):
-        """Constructor of Square"""
-        self.integer_validator("size", size)
-        self.__size = size
-        super().__init__(size, size)
+    """Represent a square"""
 
-    def area(self):
-        """Calculate the area of a Square"""
-        return self.__size ** 2
+    def __init__(self, size):
+        """Initialize a new square
+        """
+        self.integer_validator("size", size)
+        super().__init__(size, size)
+        self.__size = size
